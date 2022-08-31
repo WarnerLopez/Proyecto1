@@ -2,9 +2,35 @@
     
     
 }
+.imgra{
+    width: 300;
+    height: 300;
+}
 .top-nav{
-    color: aliceblue;
+    color: aliceblue !important;
 }
 .boton-venta{
     text-align: center;
+}
+.span2{
+    color: red;
+}
+.precio{
+    font-size: 22px;
+    font-family: raleway;
+    color: #2b2d36;
+}
+.body{
+    background-color: #E8F9FD;
+}
+.probar{
+    background-color: white;
+    margin: 4%;
+}
+
+.cont{
+    padding: 50px;
+   background-color: #CFD2CF;
+
+
 }
