@@ -1,0 +1,30 @@
+.right-panel{
+    
+    
+}
+.top-nav{
+    color: aliceblue !important;
+}
+.footer{
+    color: aliceblue !important;
+}
+.body{
+    background-color: #E8F9FD;
+}
+
+.span2{
+    color: red;
+}
+
+.footer i {
+    font-size: 1.5rem;
+    color: rgb(255, 254, 248) !important;
+    padding-right: 10px;
+}
+
+.cont{
+    padding: 50px;
+   background-color: #CFD2CF;
+
+
+}
