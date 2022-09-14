@@ -1,7 +1,24 @@
-.right-panel{
-    
-    
-}
+:root {
+    --shadow-color: 0deg 0% 63%;
+    --shadow-elevation-low:
+      1px 1px 1.6px hsl(var(--shadow-color) / 0.34),
+      1.6px 1.6px 2.5px -1.2px hsl(var(--shadow-color) / 0.34),
+      3.9px 3.8px 6.1px -2.5px hsl(var(--shadow-color) / 0.34);
+    --shadow-elevation-medium:
+      1px 1px 1.6px hsl(var(--shadow-color) / 0.36),
+      3.2px 3.1px 5px -0.8px hsl(var(--shadow-color) / 0.36),
+      8px 7.8px 12.6px -1.7px hsl(var(--shadow-color) / 0.36),
+      19.4px 19px 30.5px -2.5px hsl(var(--shadow-color) / 0.36);
+    --shadow-elevation-high:
+      1px 1px 1.6px hsl(var(--shadow-color) / 0.34),
+      5.7px 5.5px 8.9px -0.4px hsl(var(--shadow-color) / 0.34),
+      10.6px 10.3px 16.6px -0.7px hsl(var(--shadow-color) / 0.34),
+      17.4px 17px 27.4px -1.1px hsl(var(--shadow-color) / 0.34),
+      27.8px 27.1px 43.7px -1.4px hsl(var(--shadow-color) / 0.34),
+      43.4px 42.4px 68.3px -1.8px hsl(var(--shadow-color) / 0.34),
+      66px 64.5px 103.8px -2.1px hsl(var(--shadow-color) / 0.34),
+      97.2px 95px 152.9px -2.5px hsl(var(--shadow-color) / 0.34);
+  }
 .imgra{
     width: 300;
     height: 225;
@@ -37,8 +54,37 @@
 }
 
 .cont{
-    padding: 50px;
-   background-color: #CFD2CF;
+    
+       background: linear-gradient(220.55deg, #5D85A6 0%, #0E2C5E 100%);
+    
+}
+.sombra{
+    float: left;
+    width: 27%;
+    margin-left: 1%;
+    margin-right: 1%;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.60);  
+    background: linear-gradient(220.55deg, #AFCCCB 0%, #616566 100%);   
+      
+}
+.sombra2{
+   
+    width: 100%;
+    margin-left: 1%;
+    margin-right: 1%;
+    box-shadow: 5px 5px rgba(0, 0, 0, 0.60);  
+}
+.bot{
+    margin-bottom: 3px;
+}
+.cuerpo{
+    background: linear-gradient(220.55deg, #5D85A6 0%, #0E2C5E 100%);
 
-
+}
+.footer-margen{
+    margin-bottom: 0%;
+    margin-top: 0%;
+}
+.colla{
+    margin-top: 5px;
 }
