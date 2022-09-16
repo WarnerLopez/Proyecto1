@@ -19,6 +19,22 @@ $(document).ready(function () {
             dataType: "json",
             success: function (data) {
                 let html = '';
+                
+                
+              
+                for(let i = 0; i < data.length; i++){
+                  html += '<div class="col-xl-3 probar sombra">';
+                  html += '<img src="./assets/'+data[i].image+'"class="img-fluid img-profile imgra"/>';
+                  html += '<h5>'+data[i].name+'</h5>';
+                  html += '<h5>₡'+data[i].price+'</h5>';
+                  html += '<div class="d-grid gap-2 col-6 mx-auto">';
+                  html += '<a href="icore9.html" type="button" class="btn btn-dark bot">Información</a>';
+                  html += '</div> </div>';
+
+
+
+                }
+                /**
                 for (let i = 0; i < data.length; i++) {
                     console.log(i);
                     html += '<div class="card product-item" >';
@@ -30,6 +46,19 @@ $(document).ready(function () {
                     html += ' </div> </div>';
 
                 }
+                
+                
+                <div class="col-xl-3 probar sombra">
+      
+                <img src="./assets/core-i9.jpg"class="img-fluid img-profile imgra"/>
+  
+                <h5>Procesador Intel icore 9</h5>
+                <h5>₡300000</h5>
+                <div class="d-grid gap-2 col-6 mx-auto">
+                  <a href="icore9.html" type="button" class="btn btn-dark bot">Información</a>
+                </div>
+                */
+                console.log(html);
                 $('#products-list').append(html);
             },
             error: function (error) {
