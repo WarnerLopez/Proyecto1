@@ -2,7 +2,7 @@ let items = [];
 
 function moveToItemPage(index) {
     localStorage.setItem('item', JSON.stringify(items[index]))
-    window.location.href = "item.html";
+    window.location.href = "icore9.html";
 }
 $(document).ready(function () {
     $("#openSidedar").on("click", function () {
@@ -19,16 +19,14 @@ $(document).ready(function () {
             dataType: "json",
             success: function (data) {
                 let html = '';
-                
-                
-              
+                items=data;
                 for(let i = 0; i < data.length; i++){
                   html += '<div class="col-xl-3 probar sombra">';
                   html += '<img src="./assets/'+data[i].image+'"class="img-fluid img-profile imgra"/>';
                   html += '<h5>'+data[i].name+'</h5>';
                   html += '<h5>₡'+data[i].price+'</h5>';
                   html += '<div class="d-grid gap-2 col-6 mx-auto">';
-                  html += '<a href="icore9.html" type="button" class="btn btn-dark bot">Información</a>';
+                  html += '<a onclick="moveToItemPage('+i+')" type="button" class="btn btn-dark bot">Información</a>';
                   html += '</div> </div>';
 
 
